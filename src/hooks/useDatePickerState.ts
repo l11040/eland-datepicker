@@ -12,7 +12,7 @@ export const useDatePickerState = (initialDate: Date | null = null) => {
     setInputValue(selectedDate ? formatDate(selectedDate) || "" : "");
   }, [selectedDate]);
 
-  const handleDateChange = useCallback((date: Date | null) => {
+  const handleDateChange = useCallback((date?: Date | null) => {
     if (date) {
       setSelectedDate(date);
     }
@@ -30,6 +30,10 @@ export const useDatePickerState = (initialDate: Date | null = null) => {
     },
     []
   );
+
+  useEffect(() => {
+    setSelectedDate(initialDate);
+  }, [initialDate]);
 
   return {
     selectedDate,
