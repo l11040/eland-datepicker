@@ -3,3 +3,8 @@ stories/
 *.stories.tsx
 node_modules/
 dist/storybook/
+src
+.vscode
+.idea
+tsconfig.json
+vite.config.ts
