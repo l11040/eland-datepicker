@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --tw-bg: #ffffff;
+    --tw-bg1: #f4f4fa;
+    --tw-text: #181a20;
+    --tw-inverseTxt: #ededed;
+    --tw-thTxt: #626a76;
+    --tw-selectedBg: #f7f7f8;
+    --tw-outline1: #dce0e6;
+    --tw-signature: #7bc914;
+    --tw-signature2: #f6dd21;
+    --tw-fall: #f6465d;
+
+    --noto_sans_kr: "Noto Sans KR", sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --tw-bg: #181a1f;
+      --tw-bg1: #1e2329;
+      --tw-text: #ededed;
+      --tw-inverseTxt: #181a20;
+      --tw-thTxt: #626a76;
+      --tw-selectedBg: #1e2026;
+      --tw-outline1: #2b3139;
+      --tw-signature: #a6fc35;
+      --tw-signature2: #fcd535;
+      --tw-fall: #f6465d;
+    }
+  }
+
+  * {
+    @apply box-border p-0 m-0;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+    }
+  }
+}
