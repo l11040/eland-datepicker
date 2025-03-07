@@ -1,6 +1,5 @@
-src
-.vscode
-.idea
-node_modules
-tsconfig.json
-vite.config.ts
+.storybook/
+stories/
+*.stories.tsx
+node_modules/
+dist/storybook/
