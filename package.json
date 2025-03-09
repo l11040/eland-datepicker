@@ -7,7 +7,8 @@
   "types": "dist/index.d.ts",
   "exports": {
     "import": "./dist/eland-datepicker.es.js",
-    "require": "./dist/eland-datepicker.cjs.js"
+    "require": "./dist/eland-datepicker.cjs.js",
+    "types": "./dist/index.d.ts"
   },
   "scripts": {
     "dev": "vite",
