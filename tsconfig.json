@@ -2,8 +2,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "NodeNext",
+    "moduleResolution": "bundler",
     "declaration": true,
     "declarationDir": "dist",
     "outDir": "dist",
@@ -12,11 +12,6 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "paths": {
-      "*": [
-        "types/*"
-      ]
-    },
     "typeRoots": [
       "./node_modules/@types"
     ],
@@ -26,7 +21,6 @@
     ]
   },
   "include": [
-    "src",
-    "types"
+    "src"
   ]
 }

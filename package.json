@@ -2,9 +2,13 @@
   "name": "@l11040/eland-datepicker",
   "version": "1.0.5",
   "description": "",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "main": "dist/eland-datepicker.cjs.js",
+  "module": "dist/eland-datepicker.es.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/eland-datepicker.es.js",
+    "require": "./dist/eland-datepicker.cjs.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,8 +17,8 @@
     "build-storybook": "storybook build"
   },
   "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
     "tailwindcss": "^3.4.17"
   },
   "dependencies": {

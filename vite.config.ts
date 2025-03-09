@@ -7,12 +7,12 @@ export default defineConfig({
   plugins: [react(), dts(), svgr()],
   build: {
     lib: {
-      entry: "src/index.ts", // 엔트리 파일 지정
+      entry: "src/index.ts",
       name: "ElandDatePicker",
-      fileName: (format: any) => `eland-datepicker.${format}.js`,
+      formats: ["es", "cjs"], // ES 모듈 + CommonJS 지원
+      fileName: (format) => `eland-datepicker.${format}.js`,
     },
     rollupOptions: {
-      // react, tailwindcss 같은 라이브러리는 번들에 포함하지 않음
       external: ["react", "react-dom", "tailwindcss"],
       output: {
         globals: {
