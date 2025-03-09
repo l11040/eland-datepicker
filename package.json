@@ -1,6 +1,6 @@
 {
   "name": "@l11040/eland-datepicker",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "dist/eland-datepicker.cjs.js",
   "module": "dist/eland-datepicker.es.js",
